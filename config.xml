@@ -1,0 +1,14 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>PVA Routing Addin</Name><AddInID>{70b27a8c-3825-4fb9-8008-04260ba267f2}</AddInID><Description>Residential Routing Tools Addin</Description><Version>0.1</Version><Image>Images\RouteFastest32.png</Image><Author>Stan Shelton</Author><Company>Jefferson PVA</Company><Date>05/07/2019</Date><Targets><Target name="Desktop" version="10.2" /></Targets><AddIn language="PYTHON" library="pvaRoutes_addin.py" namespace="pvaRoutes_addin"><ArcMap>
+    <Commands>
+        <Button caption="Route Zoom" category="PVA Routing Addin" class="btnRouteZoom" id="pvaRoutes_addin.button" image="Images\RouteEventIdentifyLocation16.png" message="Select/Zoom to Route" tip="Zoom to Route"><Help heading="" /></Button>
+        <Button caption="Create Routes" category="PVA Routing Addin" class="btnCreateRoutes" id="pvaRoutes_addin.button_1" image="Images\RouteFastest16.png" message="Create the Routes" tip="Create Routes"><Help heading="" /></Button>
+        <Button caption="Export Route" category="PVA Routing Addin" class="btnExportRoute" id="pvaRoutes_addin.button_2" image="Images\TableExcel16.png" message="Updates and exports the route table" tip="Export Route Table"><Help heading="" /></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="PVA Routes" category="PVA Routing Addin" id="pvaRoutes_addin.toolbar" showInitially="true"><Items><Button refID="pvaRoutes_addin.button" /><Button refID="pvaRoutes_addin.button_1" /><Button refID="pvaRoutes_addin.button_2" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
